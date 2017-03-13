@@ -8,14 +8,8 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
-@EnableAutoConfiguration
-@EnableWebMvc
-public class InitialApplication extends SpringBootServletInitializer {
+public class InitialApplication {
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(InitialApplication.class);
-	}
 	public static void main(String[] args) {
 		SpringApplication.run(InitialApplication.class, args);
 	}
